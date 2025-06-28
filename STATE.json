@@ -45,6 +45,10 @@
   ],
   "note": "The assistant must not persist new facts in memory unless explicitly instructed with one of the confirmation phrases above."
   },
+  "structure": {
+  "defined_in": "README.md#project-directory-structure",
+  "note": "Directory layout and usage conventions are defined in README.md only. No duplication here."
+  },  
   "repository_monitoring": {
     "structure_tracking": true,
     "step_tracking": true,
