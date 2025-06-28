@@ -1,0 +1,55 @@
+{
+  "project": "deepseek-llm-7b-base-trained-v1",
+  "description": "Custom-trained DeepSeek model for code generation, focused on user's AI agent project written in Python, Groovy, and other languages.",
+  "status": "STEP 1 completed — Git initialized and directory structure created.",
+  "base_model": "deepseek-ai/deepseek-llm-7b-base",
+  "target_use": "code generation (not chat)",
+  "language": "en",
+  "storage_path": "/mnt/deepseek/deepseek-llm-7b-base-trained-v1",
+  "repository": "git@github.com:pawsiw/deepseek-llm-7b-base-trained-v1.git",
+  "model_nature": "private, but may use public cloud models if they improve performance",
+  "execution_environment": {
+    "local_machine": "used for code editing and triggering training",
+    "gpu_machine": "used for training, running Ubuntu 24.04 with full CUDA & Python stack",
+    "shared_storage": "/mnt/deepseek mounted via NFS on both machines"
+  },
+  "codebase": {
+    "agent_language": "Python",
+    "project_languages": ["Python", "Groovy", "Grails", "Shell", "..."],
+    "source_layout": "Multiple Git repositories per component",
+    "documentation_status": "Complete module-level docs and dependency definitions available"
+  },
+  "training_process": {
+    "tooling": ["transformers", "peft", "trl", "bitsandbytes"],
+    "mode": "LoRA fine-tuning",
+    "scripts_location": "trainer/",
+    "manual_trigger": true,
+    "auto_restart": false
+  },
+  "data_handling": {
+    "input_sources": "source code from real agent project",
+    "format": "to be converted to jsonl prompt-response format",
+    "scope": "model must see full context, not isolated snippets"
+  },
+  "instructions_policy": {
+    "language": "All comments, configs, instructions in English",
+    "code_generation": "No code is generated unless explicitly requested",
+    "prompt_mode": "The model is expected to generate code only, not chat-style answers"
+  },
+  "progress": [
+    "✅ STEP 1 — directory structure created",
+    "✅ Git repository initialized and pushed to remote",
+    "✅ commands.md created and updated",
+    "✅ Project language policy defined",
+    "✅ Agent role clarified: tool for code generation, not dialogue"
+  ],
+  "next_steps": [
+    "STEP 2 — download base model into models/base/",
+    "STEP 3 — prepare dataset from actual agent code (cross-repository)",
+    "STEP 4 — convert dataset into jsonl training format",
+    "STEP 5 — run LoRA training with train_lora.py",
+    "STEP 6 — evaluate trained model against example prompts",
+    "STEP 7 — optionally tag and freeze trained version"
+  ],
+  "last_updated": "2025-06-28T09:30:00+02:00"
+}
