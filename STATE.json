@@ -36,6 +36,15 @@
     "code_generation": "No code is generated unless explicitly requested",
     "prompt_mode": "The model is expected to generate code only, not chat-style answers"
   },
+  "memory_policy": {
+  "auto_commit": false,
+  "require_explicit_confirmation": true,
+  "confirmation_phrases": [
+    "yes, save this as a decision",
+    "remember this"
+  ],
+  "note": "The assistant must not persist new facts in memory unless explicitly instructed with one of the confirmation phrases above."
+  },
   "repository_monitoring": {
     "structure_tracking": true,
     "step_tracking": true,
