@@ -5,8 +5,10 @@
   "base_model": "deepseek-ai/deepseek-llm-7b-base",
   "target_use": "code generation (not chat)",
   "language": "en",
-  "storage_path": "/mnt/deepseek/deepseek-llm-7b-base-trained-v1",
-  "repository": "git@github.com:pawsiw/deepseek-llm-7b-base-trained-v1.git",
+   "repository": {
+    "url": "https://github.com/pawsiw/deepseek-llm-7b-base-trained-v1.git",
+    "storage_path": "/mnt/deepseek/deepseek-llm-7b-base-trained-v1"
+  },
   "model_nature": "private, but may use public cloud models if they improve performance",
   "execution_environment": {
     "local_machine": "used for code editing and triggering training",
@@ -57,12 +59,12 @@
     "state_file": "STATE.json"
   },
   "progress": [
-    "✅ STEP 1 — directory structure created",
-    "✅ Git repository initialized and pushed to remote",
-    "✅ commands.md created and updated",
-    "✅ Project language policy defined",
-    "✅ Agent role clarified: tool for code generation, not dialogue",
-    "✅ STEP 2 — Base model downloaded and verified using Git LFS"
+    "STEP 1 — directory structure created",
+    "Git repository initialized and pushed to remote",
+    "commands.md created and updated",
+    "Project language policy defined",
+    "Agent role clarified: tool for code generation, not dialogue",
+    "STEP 2 — Base model downloaded and verified using Git LFS"
 
   ],
   "next_steps": [
@@ -72,5 +74,5 @@
     "STEP 6 — evaluate trained model against example prompts",
     "STEP 7 — optionally tag and freeze trained version"
   ],
-  "last_updated": "2025-06-28T09:45:00+02:00"
+  "last_updated": "2025-06-28T09:50:00+02:00"
 }

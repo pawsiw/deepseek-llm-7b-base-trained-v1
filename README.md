@@ -28,7 +28,14 @@ The root directory on the local machine is `/mnt/deepseek/`. All project-related
 │   │       └── README.md
 │   │
 │   ├── datasets/                     
-│   │   └── <dataset_name>.jsonl      # Processed datasets for training (JSONL, pickle, etc.)
+│   │   └── <dataset_name>/           # Processed datasets for training (JSONL, pickle, etc.)
+│   │       ├── config.json           # Snapshot of run config
+│   │       ├── raw/                  # Copied source code files
+│   │       ├── processed/            # JSONL files for pretrain/instruct formats
+│   │       │   ├── pretrain.jsonl    # self-supervised code corpus (planned)
+│   │       │   └── pretrain.jsonl    # instruct.jsonl`: instruction-tuned dataset (planned)
+│   │       ├── meta.json
+│   │       └── README.md
 │   │
 │   ├── runs/                         
 │   │   └── <run_id>/                 
@@ -46,6 +53,8 @@ The root directory on the local machine is `/mnt/deepseek/`. All project-related
 ├── projects/my_agent/                # Own agent implementation
 ├── projects/python-genai/            # Reference Gemini implementation (Google)
 ```
+
+**Note:** The source files under `/mnt/deepseek/deepseek-llm-7b-base-trained-v1/` are stored in the GitHub repository: [https://github.com/pawsiw/deepseek-llm-7b-base-trained-v1.git](https://github.com/pawsiw/deepseek-llm-7b-base-trained-v1.git)
 
 ---
 
