@@ -54,10 +54,11 @@ git branch -M main
 
 # First push
 git push -u origin main
+```
+---
+## 🧱 STEP 2 — Download base model using Git LFS
 
-
-# STEP 2 — Download base model using Git LFS
-
+```bash
 # Install Git LFS (if not already installed)
 sudo apt update
 sudo apt install git-lfs
@@ -73,3 +74,16 @@ git clone https://huggingface.co/deepseek-ai/deepseek-llm-7b-base
 
 # Optional: Verify model structure
 ls deepseek-llm-7b-base
+```
+
+---
+# STEP 3
+
+```bash
+mkdir /mnt/deepseek/projects
+cd /mnt/deepseek/projects
+git clone git@github.com:pawsiw/my_agent.git
+cd ..
+cd /mnt/deepseek/projects/
+git clone https://github.com/googleapis/python-genai.git
+

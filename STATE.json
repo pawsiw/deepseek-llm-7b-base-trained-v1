@@ -66,7 +66,7 @@
 
   ],
   "next_steps": [
-    "STEP 3 — prepare dataset from actual agent code (cross-repository)",
+    "STEP 3 — prepare dataset from actual code (cross-repository)",
     "STEP 4 — convert dataset into jsonl training format",
     "STEP 5 — run LoRA training with train_lora.py",
     "STEP 6 — evaluate trained model against example prompts",
