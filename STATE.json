@@ -49,7 +49,7 @@
     "✅ commands.md created and updated",
     "✅ Project language policy defined",
     "✅ Agent role clarified: tool for code generation, not dialogue",
-    "✅ STEP 2 — Base model downloaded using Git LFS"
+    "✅ STEP 2 — Base model downloaded and verified using Git LFS"
 
   ],
   "next_steps": [
