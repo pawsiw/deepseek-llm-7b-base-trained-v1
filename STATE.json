@@ -1,7 +1,6 @@
 {
   "project": "deepseek-llm-7b-base-trained-v1",
   "description": "Custom-trained DeepSeek model for code generation, focused on user's AI agent project written in Python, Groovy, and other languages.",
-  "status": "STEP 1 completed — Git initialized and directory structure created.",
   "base_model": "deepseek-ai/deepseek-llm-7b-base",
   "target_use": "code generation (not chat)",
   "language": "en",
