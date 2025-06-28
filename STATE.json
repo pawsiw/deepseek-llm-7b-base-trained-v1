@@ -48,10 +48,11 @@
     "✅ Git repository initialized and pushed to remote",
     "✅ commands.md created and updated",
     "✅ Project language policy defined",
-    "✅ Agent role clarified: tool for code generation, not dialogue"
+    "✅ Agent role clarified: tool for code generation, not dialogue",
+    "✅ STEP 2 — Base model downloaded using Git LFS"
+
   ],
   "next_steps": [
-    "STEP 2 — download base model into models/base/",
     "STEP 3 — prepare dataset from actual agent code (cross-repository)",
     "STEP 4 — convert dataset into jsonl training format",
     "STEP 5 — run LoRA training with train_lora.py",

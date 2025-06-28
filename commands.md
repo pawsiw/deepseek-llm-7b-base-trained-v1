@@ -55,3 +55,21 @@ git branch -M main
 # First push
 git push -u origin main
 
+
+# STEP 2 — Download base model using Git LFS
+
+# Install Git LFS (if not already installed)
+sudo apt update
+sudo apt install git-lfs
+
+# Initialize Git LFS
+git lfs install
+
+# Move to model storage directory
+cd /mnt/deepseek/deepseek-llm-7b-base-trained-v1/models
+
+# Clone the base model repository
+git clone https://huggingface.co/deepseek-ai/deepseek-llm-7b-base
+
+# Optional: Verify model structure
+ls deepseek-llm-7b-base
