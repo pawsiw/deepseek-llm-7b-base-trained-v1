@@ -36,6 +36,13 @@
     "code_generation": "No code is generated unless explicitly requested",
     "prompt_mode": "The model is expected to generate code only, not chat-style answers"
   },
+  "repository_monitoring": {
+    "structure_tracking": true,
+    "step_tracking": true,
+    "change_documentation": true,
+    "commands_source": "commands.md",
+    "state_file": "STATE.json"
+  },
   "progress": [
     "✅ STEP 1 — directory structure created",
     "✅ Git repository initialized and pushed to remote",
@@ -51,5 +58,5 @@
     "STEP 6 — evaluate trained model against example prompts",
     "STEP 7 — optionally tag and freeze trained version"
   ],
-  "last_updated": "2025-06-28T09:30:00+02:00"
+  "last_updated": "2025-06-28T09:45:00+02:00"
 }
